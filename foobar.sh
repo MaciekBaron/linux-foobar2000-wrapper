@@ -20,13 +20,13 @@
 ##############
 
 # The command you use to run Foobar2000
-FOOBAR="wine \"media/maciek/___/Program Files (x86)/foobar2000/foobar2000.exe\" "
+FOOBAR="wine \"media/maciek/local drive/Program Files (x86)/foobar2000/foobar2000.exe\" "
 
 # The location of your music on Windows
-WINDOWS_MUSIC="G:\Muzyka"
+WINDOWS_MUSIC="G:\Music"
 
 # The location of your music on Linux
-LINUX_MUSIC="media/maciek/local drive/muzyka"
+LINUX_MUSIC="media/maciek/local drive/music"
 
 
 
