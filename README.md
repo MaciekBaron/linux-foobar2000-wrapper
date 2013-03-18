@@ -26,7 +26,7 @@ Ubuntu example
 
 For example if you want to allow foobar2000 to open music files by default, you first need to create a Desktop Entry.
 
-
+0. Open the script in a text editor and configure it (variables at the top, self-explainatory)
 1. Copy the script to `/usr/bin/foobar2000` or somewhere else and make sure to make it executable (`chmod a+x foobar2000`)
 2. Go to the folder `~/.local/share/applications`
 3. Create a file called `foobar2000.desktop` and enter the following text (remember to set the right values)
@@ -46,7 +46,7 @@ For example if you want to allow foobar2000 to open music files by default, you 
         # Download an icon and use it
         Icon=/usr/share/foobar2000.svg
         Categories=GNOME;GTK;AudioVideo;Audio;Player;
-4. Safe the file
+4. Save the file
 5. If you still don't see "Open With foobar2000" when you right click on a music file, open `mimeapps.list` from the same 
 folder and add these lines at the end, in the `[Added Associations]` section:
         
@@ -54,3 +54,20 @@ folder and add these lines at the end, in the `[Added Associations]` section:
         audio/flac=foobar2000.desktop;
 
 This should add foobar2000 to the context menu.
+
+Usage
+=====
+The wrapper supports nearly every command that you can use on the original executable.
+
+For instance if you want to pause playback from command line simply use:
+
+    foobar2000 /pause
+
+You can add files to the current playstlist by using the `/add` command:
+
+    foobar2000 /add "/location/with/music/file.mp3"
+    
+Please note that the location will be translated to a Windows location (if script is configured properly).
+
+In theory you can bind those commands to buttons or widgets (haven't tried that yet but there's no reason for it to 
+not work).
