@@ -19,4 +19,25 @@ Linux distribution easier.
 Installation
 ============
 
-TBC
+Ubuntu example
+--------
+
+For example if you want to allow foobar2000 to open music files by default you firsr need to create a Desktop Entry 
+1. Go to the folder ~/.local/share/applications
+2. Create a file called foobar2000.desktop and enter the following text (remember to set the right values)
+    [Desktop Entry]
+    Type=Application
+    Name=foobar2000
+    GenericName=Plays music
+    Version=1.0
+    Encoding=UTF-8
+    Terminal=false
+
+    # This is where you need to tell where the script is
+    Exec=/usr/bin/foobar2000 add
+    Comment=Plays music and looks swell
+
+    # Download an icon and use it
+    Icon=/usr/share/foobar2000.svg
+    Categories=GNOME;GTK;AudioVideo;Audio;Player;
+3. Safe the file
