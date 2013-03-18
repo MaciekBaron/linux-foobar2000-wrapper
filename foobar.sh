@@ -16,7 +16,7 @@
 ## END LICENSE
 
 ##############
-#  CONFIG   #
+#   CONFIG   #
 ##############
 
 # The command you use to run Foobar2000
@@ -31,7 +31,7 @@ LINUX_MUSIC="media/maciek/local drive/music"
 
 
 ##############
-#	SCRIPT   #
+#   SCRIPT   #
 ##############
 
 # Commands taken from http://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Commandline_Guide
