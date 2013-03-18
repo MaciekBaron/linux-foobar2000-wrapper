@@ -15,7 +15,7 @@ you want to use it as your default music application, bind some events etc..
 This script parses all the commands and runs them properly so that you can integrate foobar2000 with your 
 Linux distribution easier.
 
-It will automaticaly translate your local paths to Windows paths (e.g. `media/drive_d/music` to `D:\music`).
+It will automaticaly translate your local paths to Windows paths (e.g. `/media/drive_d/music` to `D:\music`).
 
 
 Installation
