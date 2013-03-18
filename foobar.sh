@@ -19,14 +19,12 @@
 #   CONFIG   #
 ##############
 
-# The command you use to run Foobar2000
-FOOBAR="wine \"/media/maciek/local drive/Program Files (x86)/foobar2000/foobar2000.exe\" "
-
+# Location of foobar2000
+FOOBAR="/media/disk_c/Program Files (x86)/foobar2000/foobar2000.exe"
 # The location of your music on Windows
-WINDOWS_MUSIC="G:\Music"
-
+WINDOWS_MUSIC="D:\Music"
 # The location of your music on Linux
-LINUX_MUSIC="/media/maciek/local drive/music"
+LINUX_MUSIC="/media/disk_d/Music"
 
 
 
@@ -50,18 +48,18 @@ case "$1" in
 
 		files=${files//$LINUX_MUSIC/$WINDOWS_MUSIC}
 		files=${files////\\}
-		echo $FOOBAR /add $files
+		echo wine "\"$FOOBAR\"" /add $files | sh
 		;;
 
 # Invokes the specified main menu command
 /command:*)
-		echo $FOOBAR /command:\"${1:9:${#1}}\"
+		wine "$FOOBAR" /command:\"${1:9:${#1}}\"
 		;;
 /playlist_command:*)
-		echo $FOOBAR /playlist_command:\"${1:18:${#1}}\"
+		wine "$FOOBAR" /playlist_command:\"${1:18:${#1}}\"
 		;;
 /playing_command:*)
-		echo $FOOBAR /playing_command:\"${1:17:${#1}}\"
+		wine "$FOOBAR" /playing_command:\"${1:17:${#1}}\"
 		;;
 /context_command:*)
 		for file in "$@"
@@ -73,12 +71,12 @@ case "$1" in
 			done
 		files=${files//$LINUX_MUSIC/$WINDOWS_MUSIC}
 		files=${files////\\}
-		echo $FOOBAR /context_command:\"${1:17:${#1}}\" $files
+		echo wine "\"$FOOBAR\"" /context_command:\"${1:17:${#1}}\" $files | sh
 		;;
 
 # Single commands that do not require parsing
 /play|/pause|/playpause|/prev|/next|/rand|/stop|/exit|/show|/hide|/config)
-		echo $FOOBAR $1
+		wine "$FOOBAR" $1
 		;;
 
 --help|-h|/?)
@@ -105,7 +103,7 @@ Available switches:
 *)		
 		if [ "$#" -eq "0" ] # No arguments
 		then
-			echo $FOOBAR
+			wine "$FOOBAR"
 		else
 			echo Unrecognised command
 			exit 1
