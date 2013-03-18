@@ -26,6 +26,7 @@ For example if you want to allow foobar2000 to open music files by default you f
 
 1. Go to the folder `~/.local/share/applications`
 2. Create a file called `foobar2000.desktop` and enter the following text (remember to set the right values)
+
     [Desktop Entry]
     Type=Application
     Name=foobar2000
