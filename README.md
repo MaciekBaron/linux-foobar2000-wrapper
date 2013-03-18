@@ -15,6 +15,8 @@ you want to use it as your default music application, bind some events etc..
 This script parses all the commands and runs them properly so that you can integrate foobar2000 with your 
 Linux distribution easier.
 
+It will automaticaly translate your local paths to Windows paths (e.g. `media/drive_d/music` to `D:\music`).
+
 
 Installation
 ============
@@ -36,10 +38,12 @@ For example if you want to allow foobar2000 to open music files by default you f
         Terminal=false
         
         # This is where you need to tell where the script is
-        Exec=/usr/bin/foobar2000 add
-        Comment=Plays music and looks swell
+        Exec=/usr/bin/foobar2000 /add
+        Comment=foobar2000 music player
         
         # Download an icon and use it
         Icon=/usr/share/foobar2000.svg
         Categories=GNOME;GTK;AudioVideo;Audio;Player;
 3. Safe the file
+
+This should add foobar2000 to the context menu.
