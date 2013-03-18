@@ -24,10 +24,10 @@ Installation
 Ubuntu example
 --------
 
-For example if you want to allow foobar2000 to open music files by default you first need to create a Desktop Entry.
+For example if you want to allow foobar2000 to open music files by default, you first need to create a Desktop Entry.
 
 
-1. Copy the script to `/usr/bin/foobar2000` or somehwere else and make sure to make it executable (`chmod a+x foobar2000`)
+1. Copy the script to `/usr/bin/foobar2000` or somewhere else and make sure to make it executable (`chmod a+x foobar2000`)
 2. Go to the folder `~/.local/share/applications`
 3. Create a file called `foobar2000.desktop` and enter the following text (remember to set the right values)
 
