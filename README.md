@@ -2,7 +2,7 @@ Linux Foobar2000 wrapper
 ========================
 
 This is a script written in Bash to act as a wrapper for [foobar2000](http://www.foobar2000.org/) when 
-run under [Wine](http://www.winehq.org/) on Linux.
+used with [Wine](http://www.winehq.org/) on Linux.
 
 
 What is it for?
