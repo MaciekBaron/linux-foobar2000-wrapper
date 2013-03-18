@@ -24,10 +24,12 @@ Installation
 Ubuntu example
 --------
 
-For example if you want to allow foobar2000 to open music files by default you firsr need to create a Desktop Entry
+For example if you want to allow foobar2000 to open music files by default you first need to create a Desktop Entry.
 
-1. Go to the folder `~/.local/share/applications`
-2. Create a file called `foobar2000.desktop` and enter the following text (remember to set the right values)
+
+1. Copy the script to `/usr/bin/foobar2000` or somehwere else and make sure to make it executable (`chmod a+x foobar2000`)
+2. Go to the folder `~/.local/share/applications`
+3. Create a file called `foobar2000.desktop` and enter the following text (remember to set the right values)
 
         [Desktop Entry]
         Type=Application
@@ -44,6 +46,6 @@ For example if you want to allow foobar2000 to open music files by default you f
         # Download an icon and use it
         Icon=/usr/share/foobar2000.svg
         Categories=GNOME;GTK;AudioVideo;Audio;Player;
-3. Safe the file
+4. Safe the file
 
 This should add foobar2000 to the context menu.
