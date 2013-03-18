@@ -40,12 +40,17 @@ For example if you want to allow foobar2000 to open music files by default, you 
         Terminal=false
         
         # This is where you need to tell where the script is
-        Exec=/usr/bin/foobar2000 /add
+        Exec=foobar2000 /add
         Comment=foobar2000 music player
         
         # Download an icon and use it
         Icon=/usr/share/foobar2000.svg
         Categories=GNOME;GTK;AudioVideo;Audio;Player;
 4. Safe the file
+5. If you still don't see "Open With foobar2000" when you right click on a music file, open `mimeapps.list` from the same 
+folder and add these lines at the end, in the `[Added Associations]` section:
+        
+        audio/mp3=foobar2000.desktop;
+        audio/flac=foobar2000.desktop;
 
 This should add foobar2000 to the context menu.
