@@ -83,7 +83,7 @@ case "$1" in
 		echo "Author: Maciej Baron
 
 This is a (very) simple script that relays command line commands to Foobar2000 running on Wine.
-Ex. ./foobar.sh /add "/media/drive_d/music/Song by Someone.mp3"
+Ex. ./foobar.sh /add \"/media/drive_d/music/Song by Someone.mp3\"
 
 Remember to configure the script!
 
