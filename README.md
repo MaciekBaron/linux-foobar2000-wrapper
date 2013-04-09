@@ -71,3 +71,18 @@ Please note that the location will be translated to a Windows location (if scrip
 
 In theory you can bind those commands to buttons or widgets (haven't tried that yet but there's no reason for it to 
 not work).
+
+Licence
+=======
+Copyright (C) 2013 Maciej Baron (@maciekbaron)
+This program is free software: you can redistribute it and/or modify it 
+under the terms of the GNU General Public License version 3, as published 
+by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but 
+WITHOUT ANY WARRANTY; without even the implied warranties of 
+MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR 
+PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along 
+with this program. If not, see <http://www.gnu.org/licenses/>.
