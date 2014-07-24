@@ -1,12 +1,11 @@
 Linux Foobar2000 wrapper
-========================
-
+-----------------------
 This is a script written in Bash to act as a wrapper for [foobar2000](http://www.foobar2000.org/) when 
 used with [Wine](http://www.winehq.org/) on Linux.
 
 
 What is it for?
-===============
+---------------
 
 Foobar2000 is one of those applications that I really like on Windows, and want to use on Linux too. 
 Fortunately, it is possible to run it on Linux via Wine. However, there are some issues that arise when 
@@ -19,10 +18,9 @@ It will automaticaly translate your local paths to Windows paths (e.g. `/media/d
 
 
 Installation
-============
+------------
 
-Ubuntu example
---------
+### Ubuntu example
 
 For example if you want to allow foobar2000 to open music files by default, you first need to create a Desktop Entry.
 
@@ -56,7 +54,7 @@ folder and add these lines at the end, in the `[Added Associations]` section:
 This should add foobar2000 to the context menu.
 
 Usage
-=====
+----
 The wrapper supports nearly every command that you can use on the original executable.
 
 For instance if you want to pause playback from command line simply use:
@@ -73,7 +71,7 @@ In theory you can bind those commands to buttons or widgets (haven't tried that 
 not work).
 
 Licence
-=======
+-------
 Copyright (C) 2013 Maciej Baron (@maciekbaron)
 This program is free software: you can redistribute it and/or modify it 
 under the terms of the GNU General Public License version 3, as published 
