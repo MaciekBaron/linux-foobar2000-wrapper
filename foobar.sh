@@ -85,7 +85,7 @@ case "$1" in
 This is a (very) simple script that relays command line commands to Foobar2000 running on Wine.
 Ex. ./foobar.sh /add \"/media/drive_d/music/Song by Someone.mp3\"
 
-Remember to configure the script!
+Remember to configure the script by editing this file!
 
 Available switches:
    /add <list-of-files> - appends the specified files to the current playlist instead of replacing the playlist content and playing them immediately
